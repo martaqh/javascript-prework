@@ -22,12 +22,7 @@ if (playerInput == '1') {
 } else if (playerInput == '3') {
     playerMove = 'nożyczki'
 } else {
-    printMessage ("Wybrana liczba jest niepoprawna. Twój ruch to kamień");
-    playerMove = 'kamień';
-}
-
-
-
-  playerMove = 'nieznany ruch';
+    printMessage ("Wybrana liczba jest niepoprawna.");
+    playerMove = 'nieznany ruch';
 }
 printMessage('Twój ruch: ' + playerMove);
