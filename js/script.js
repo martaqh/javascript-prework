@@ -12,7 +12,7 @@ function buttonClicked(argButtonName) {
     } else if (argMoveId == 2) {
       return 'papier'
     } else if (argMoveId == 3) {
-      return 'nożyczki'
+      return 'nożyce'
     } else {
       printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
       return 'kamień';
@@ -24,8 +24,8 @@ function buttonClicked(argButtonName) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   
     if ((argPlayerMove == 'papier' && argComputerMove == 'kamień')
-    || (argPlayerMove == 'kamień' && argComputerMove == 'nożyczki')
-    || (argPlayerMove == 'nożyczki' && argComputerMove == 'papier'))
+    || (argPlayerMove == 'kamień' && argComputerMove == 'nożyce')
+    || (argPlayerMove == 'nożyce' && argComputerMove == 'papier'))
     {
       printMessage('Wygrywasz!');
     }
@@ -35,7 +35,7 @@ function buttonClicked(argButtonName) {
     else {
       printMessage('Przegrywasz :(');
     }
-    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
   }
   
   
