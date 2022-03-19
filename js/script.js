@@ -1,8 +1,11 @@
 let argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
 
+let playerWon = 0;
+let computerWon = 0;
 
 function buttonClicked(argButtonName) {
   clearMessages();
+  clearResult();
   console.log(argButtonName + ' został kliknięty');
   
   function getMoveName(argMoveId) {
@@ -19,26 +22,30 @@ function buttonClicked(argButtonName) {
     }
   }
   
-  
   function displayResult(argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
-  
+      
     if ((argPlayerMove == 'papier' && argComputerMove == 'kamień')
     || (argPlayerMove == 'kamień' && argComputerMove == 'nożyce')
     || (argPlayerMove == 'nożyce' && argComputerMove == 'papier'))
     {
       printMessage('Wygrywasz!');
+      playerWon++;
+      
     }
     else if (argPlayerMove == argComputerMove) {
       printMessage('Remis.');
     }
     else {
       printMessage('Przegrywasz :(');
+      computerWon++;
+      
     }
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
+    printResult('Aktualny wynik: ' + playerWon + ' - ' + computerWon);
+    
   }
-  
-  
+   
   playerMove = argButtonName;
   
   randomNumber = Math.floor(Math.random() * 3 + 1);
