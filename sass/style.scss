@@ -6,7 +6,7 @@ $color-accent: #21cc46;
 
 
 
-*, *::before, *::after {
+body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -24,13 +24,13 @@ $color-accent: #21cc46;
 }
 
 .container h1 {
-    padding: 30px;
+    margin-bottom: 40px;
     font-family: $font-logo;
     font-size: 50px;
 }
 
 .container h3, .container p, #buttons {
-    padding: 20px;
+    padding: 10px 0;
     font-size: 20px;
 }
 
@@ -39,7 +39,22 @@ $color-accent: #21cc46;
     font-size: 24px;
 }
 
+.container p {
+    margin: 0;
+}
+
+.hands {
+    margin: 0;
+    padding: 0;
+}
+
+.hands i {
+    padding: 0 30px;
+    font-size: 24px;
+}
+
 button {
+    font-family: $font-main;
     margin: 0 20px;
     padding: 10px 30px;
     font-weight: 600;
@@ -53,8 +68,7 @@ button {
 }
 
 #messages {
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 0;
     text-align: center;
     font-weight: 700;
     font-size: 24px;
