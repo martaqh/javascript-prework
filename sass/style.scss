@@ -61,10 +61,17 @@ button {
     border-radius: 5px;
     border-style: solid;
     border-color: $color-accent;
+    background-color: transparent;
     cursor: pointer;
     font-size: 20px;
     text-transform: uppercase;
     
+}
+
+button:hover {
+    background-color: $color-accent;
+    color: $color-background;
+    transition: .7s;
 }
 
 #messages {
