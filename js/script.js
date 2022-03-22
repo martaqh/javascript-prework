@@ -1,4 +1,4 @@
-let buttonTest, buttonRock, buttonPaper, buttonScissors;
+let buttonRock, buttonPaper, buttonScissors;
 
 let playerWon = 0;
 let computerWon = 0;
