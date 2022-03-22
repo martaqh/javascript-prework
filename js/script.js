@@ -1,4 +1,4 @@
-let buttonRock, buttonPaper, buttonScissors;
+
 
 let playerWon = 0;
 let computerWon = 0;
@@ -56,6 +56,8 @@ function buttonClicked(argButtonName) {
   
   displayResult(playerMove, computerMove);
 }
+
+let buttonRock, buttonPaper, buttonScissors;
 
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); } );
