@@ -1,7 +1,5 @@
-
-
-let playerWon = 0;
-let computerWon = 0;
+let playerWon = 0,
+    computerWon = 0;
 
 function buttonClicked(argButtonName) {
   clearMessages();
